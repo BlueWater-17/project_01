@@ -13,3 +13,19 @@ git reset HEAD 指定文件   ：将指定文件移除暂存区
 git reset HEAD .  :将所有的文件移除暂存区
 跳过暂存区，直接提交
 git commit -a -m “跳过暂存区，提交”
+
+.gitignore 忽略文件 （忽略规则）
+
+查看提交历史
+git log 最近所有的提交历史
+git log -2 最近两次的提交历史
+git log -2 --pretty=oneline 在一行上显示最近的两次提交历史
+"%h （标识）| %an（作责） | %ar（时间） | %s（提交说明）"
+ git log --pretty=format:"%h | %an | %ar | %s"
+回退提交版本  commitID版本标识
+看新版本地提交历史
+git log --pretty=oneline
+git reset --hard commitID
+看旧版本的提交历史
+git reflog --pretty=oneline
+

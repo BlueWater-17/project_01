@@ -1,3 +1,26 @@
 GitHub上的远程仓库的访问方式
 HTTPS：零配置，但每次需要输入GitHub账号密码
 SSH：需要进行额外的配置，配置成功后不需要重复输入GitHub账号密码
+
+
+HTTPS
+在Git
+修改/新增后
+1.查看Git库的文件状态信息
+2.将需要加入暂存区的文件加入：git add .
+3.git commit -m "描述此次提交的信息"
+4.（HTTPS）之前提交过的不用再操作：
+git remote add origin https://github.com/BlueWater-17/project_01.git
+git branch -M main
+git push -u origin main
+5.直接输入git push 即可
+
+SSH 免登录的加密数据传输
+SSH key：id_rsa(私钥文件，存放客户端电脑)、id_rsa.pub(公钥文件，需要配置在GitHub中)
+生成SSH key
+打开Git Bash
+输入：ssh-keygen -t rsa -b 4096 -C "You GitHUb email"
+连续敲击3次回车键，C:\Users\用户\.ssh 目录生成id_rsa和id_rsa.hub
+记事本打开id_rsa.hub 复制文本内容，打开GitHUb Settings->SSH and GPG Keys ->New SSH key
+检测SSH Key 是否配置成功
+ssh -T git@github.com

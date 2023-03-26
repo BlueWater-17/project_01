@@ -1,0 +1,2 @@
+查看跟踪文件情况 git status / git status -s（精简的方式显示）
+开始跟踪一个文件 git add index.html

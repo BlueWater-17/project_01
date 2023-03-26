@@ -11,3 +11,5 @@ git checkout -- index.html撤销修改，还原上一步的状态
 git add . 将所有修改新增的文件统一加入暂存区
 git reset HEAD 指定文件   ：将指定文件移除暂存区
 git reset HEAD .  :将所有的文件移除暂存区
+跳过暂存区，直接提交
+git commit -a -m “跳过暂存区，提交”

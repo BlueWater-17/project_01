@@ -1,2 +1,13 @@
 查看跟踪文件情况 git status / git status -s（精简的方式显示）
 开始跟踪一个文件 git add index.html
+提交：git commit -m "描述新建了index.html文件"
+ 将文件放入暂停存中：git add index.html
+红色modified 已修改没有被放入暂存区
+绿色表示，已修改已被放入暂存区
+红色不在暂存区，绿色加入在暂存区
+
+git checkout -- index.html撤销修改，还原上一步的状态
+
+git add . 将所有修改新增的文件统一加入暂存区
+git reset HEAD 指定文件   ：将指定文件移除暂存区
+git reset HEAD .  :将所有的文件移除暂存区

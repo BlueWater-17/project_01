@@ -1,0 +1,3 @@
+在项目根目录下，右键打开Git bash
+输入：git init
+这样就生成Git管理库（.git）
